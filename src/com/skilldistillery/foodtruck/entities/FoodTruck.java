@@ -16,7 +16,7 @@ public class FoodTruck {
 		this.ftName = ftName;
 		this.ftFood = ftFood;
 		this.ftRating = ftRating;
-		this.ID=i;
+		this.ID=++i;
 	}
 	
 
