@@ -28,10 +28,11 @@ public class FoodTruckApp {
 		String ftName, ftFood;
 		double ftRating;
 		boolean trigger = true;
+		int FtCounter=1;
 
 		for (int i = 0; i < 5; i++) {
 
-			System.out.println("What is the first foodtruck's name?");
+			System.out.println("What is the name for food truck number: "+ (FtCounter++) +"?");
 			ftName = sc.nextLine();
 			if (ftName.equals("Quit") || ftName.equals("quit")) {
 				break;
@@ -149,7 +150,7 @@ public class FoodTruckApp {
 				highestFT = fleetOfFoodTrucks[i].getFtName();
 				rating = fleetOfFoodTrucks[i].getFtRating();
 			}else if(rating==fleetOfFoodTrucks[i].getFtRating()) {
-				highestFT= highestFT+ " " + fleetOfFoodTrucks[i].getFtName();
+				highestFT= highestFT+ " and " + fleetOfFoodTrucks[i].getFtName();
 			}
 			
 		}

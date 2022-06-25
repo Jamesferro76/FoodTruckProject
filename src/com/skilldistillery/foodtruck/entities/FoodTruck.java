@@ -9,7 +9,7 @@ public class FoodTruck {
 	private String ftName;
 	private String ftFood;
 	private double ftRating;
-	private static int ID;
+	private int ID;
 	
 	public FoodTruck(String ftName, String ftFood, double ftRating, int i) {
 //		super();
@@ -59,7 +59,8 @@ public class FoodTruck {
 
 	@Override
 	public String toString() {
-		return "FoodTruck [ftName=" + ftName + ", ftFood=" + ftFood + ", ftRating=" + ftRating + "]";
+//		return "FoodTruck [ftName= " + ftName + ", ftFood= " + ftFood + ", ftRating= " + ftRating + "]";
+		return "FoodTruck [ftName= " + ftName + ", ftFood= " + ftFood + ", ftRating= " + ftRating + ", ID= " + ID + " ]";
 	}
 	
 	
