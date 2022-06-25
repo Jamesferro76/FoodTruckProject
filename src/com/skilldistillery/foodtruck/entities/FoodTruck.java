@@ -9,10 +9,10 @@ public class FoodTruck {
 	private String ftName;
 	private String ftFood;
 	private double ftRating;
-	private int ID;
+	private static int ID;
 	
 	public FoodTruck(String ftName, String ftFood, double ftRating, int i) {
-		super();
+//		super();
 		this.ftName = ftName;
 		this.ftFood = ftFood;
 		this.ftRating = ftRating;
@@ -54,6 +54,12 @@ public class FoodTruck {
 
 	public void setID(int iD) {
 		ID = iD;
+	}
+
+
+	@Override
+	public String toString() {
+		return "FoodTruck [ftName=" + ftName + ", ftFood=" + ftFood + ", ftRating=" + ftRating + "]";
 	}
 	
 	
