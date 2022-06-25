@@ -9,14 +9,16 @@ public class FoodTruck {
 	private String ftName;
 	private String ftFood;
 	private double ftRating;
-	private int ID;
+	private int id;
+	private static int COUNT=0;
 	
 	public FoodTruck(String ftName, String ftFood, double ftRating, int i) {
 //		super();
 		this.ftName = ftName;
 		this.ftFood = ftFood;
 		this.ftRating = ftRating;
-		this.ID=++i;
+		this.COUNT++;
+		this.id=COUNT;
 	}
 	
 
@@ -49,18 +51,18 @@ public class FoodTruck {
 	}
 
 	public int getID() {
-		return ID;
+		return id;
 	}
 
 	public void setID(int iD) {
-		ID = iD;
+		id = iD;
 	}
 
 
 	@Override
 	public String toString() {
 //		return "FoodTruck [ftName= " + ftName + ", ftFood= " + ftFood + ", ftRating= " + ftRating + "]";
-		return "FoodTruck [ftName= " + ftName + ", ftFood= " + ftFood + ", ftRating= " + ftRating + ", ID= " + ID + " ]";
+		return "FoodTruck [ftName= " + ftName + ", ftFood= " + ftFood + ", ftRating= " + ftRating + ", ID= " + id + " ]";
 	}
 	
 	
