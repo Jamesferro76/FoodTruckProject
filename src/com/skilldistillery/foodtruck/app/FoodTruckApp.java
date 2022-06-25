@@ -141,6 +141,7 @@ public class FoodTruckApp {
 	public void highestRated() {
 		double rating = 0.0;
 		String highestFT = "None";
+		int counter=0;
 
 		for (int i = 0; i < fleetOfFoodTrucks.length; i++) {
 			if(fleetOfFoodTrucks[i]==null) {
@@ -149,13 +150,14 @@ public class FoodTruckApp {
 			if (rating < fleetOfFoodTrucks[i].getFtRating()) {
 				highestFT = fleetOfFoodTrucks[i].getFtName();
 				rating = fleetOfFoodTrucks[i].getFtRating();
+				counter=i;
 			}else if(rating==fleetOfFoodTrucks[i].getFtRating()) {
 				highestFT= highestFT+ " and " + fleetOfFoodTrucks[i].getFtName();
 			}
 			
 		}
 		System.out.println("The highest rated Food Truck is: " + highestFT + " with a rating of: " + rating);
-
+		System.out.println(fleetOfFoodTrucks[counter].toString());
 	}
 
 }
