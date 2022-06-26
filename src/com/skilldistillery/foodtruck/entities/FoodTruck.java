@@ -12,7 +12,7 @@ public class FoodTruck {
 	private int id;
 	private static int COUNT=0;
 	
-	public FoodTruck(String ftName, String ftFood, double ftRating, int i) {
+	public FoodTruck(String ftName, String ftFood, double ftRating) {
 //		super();
 		this.ftName = ftName;
 		this.ftFood = ftFood;

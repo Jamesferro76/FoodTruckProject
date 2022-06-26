@@ -60,7 +60,7 @@ public class FoodTruckApp {
 //			System.out.println(i);
 //			
 
-			FoodTruck ft = new FoodTruck(ftName, ftFood, ftRating, i);
+			FoodTruck ft = new FoodTruck(ftName, ftFood, ftRating);
 
 			fleetOfFoodTrucks[i] = ft;
 
